@@ -1,57 +1,173 @@
-// EJERCICIO 1 
+// // EJERCICIO 1 
 
 
 
-for (let i = 0; i <= valor; i++) {
-  return arr;
-}  
+// function(arrFizz (valor)) {
+// for (let i = 0; i <= valor; i++) {
 
-const newArr = arr.map(function(valor) {
-  
-    let resto3 = valor % 3;
-    let resto5 = valor % 5;
+//   let resto3 = valor % 3;
+//   let resto5 = valor % 5;
 
-    if (resto3 == 0) {
-      i = 'Fizz';
-    } if (resto5 == 0) {
-      i = 'Buzz';
+//   if (resto3 == 0) {
+//     i = 'Fizz';
+//   } if (resto5 == 0) {
+//     i = 'Buzz';
+//   }
+//   if (resto3 == 0 && resto5 == 0) {
+//     i = 'BuzzFizz'
+//   }
+//   else { (i) };
+
+// }
+
+
+// }
+// console.log (arrFizz(5));
+
+
+
+
+
+
+
+// for (let i = 0; i <= valor; i++) {
+//   arr = arr[i]
+// }
+
+
+
+
+// const multiple = function (valor) {
+
+//   for (let i = 0; i > valor; i++) {
+//     console.log(i)
+//     let resto3 = (valor % 3) == 0;
+//     let resto5 = (valor % 5) == 0;
+
+//     if (resto3) {
+//       i = 'Fizz';
+//     } if (resto5) {
+//       i = 'Buzz';
+//     }
+//     if (resto3 && resto5) {
+//       i = 'BuzzFizz'
+//     }
+//     else { (i) };
+
+//   }
+
+
+// }
+
+// console.log(multiple([5]));
+
+
+
+// const getFizzBuzz = function (valor) {
+
+//   const dup = [];
+
+//   for (let i = 1; i <= valor; i++) {
+//     console.log(i)
+//     let resto3 = (i % 3 == 0);
+//     let resto5 = (i % 5 == 0);
+//     if (resto3) {
+//       dup.push('Fizz');
+
+
+//     }
+//     // if (resto5) {
+//     //   dup.push('Buzz');
+
+
+//     // }
+//     // if (resto3 && resto5) {
+//     //   dup.push('BuzzFizz');
+//     // }
+//     else {
+//       dup.push(i)
+
+//     };
+//   }
+
+//   return dup;
+// }
+
+// console.log(getFizzBuzz(15))
+
+
+
+// const getFizzBuzz = function (valor) {
+//   for (var i = 1; i <= valor; i++) {
+//     if (i % 15 === 0) {
+//       console.log('fizzbuzz')
+//     } else if (i % 5 === 0) {
+//       console.log('buzz')
+//     } else if (i % 3 === 0) {
+//       console.log('fizz')
+//     } else {
+//       console.log(i)
+//     }
+//   }
+// }
+
+
+// getFizzBuzz(15);
+
+
+// const getFizzBuzzArr = function (valor) {
+//   let arr = []
+//   for (var i = 1; i <= valor; i++) {
+//     if (i % 15 === 0) {
+//       arr.push('fizzbuzz')
+//     } else if (i % 5 === 0) {
+//       arr.push('buzz')
+//     } else if (i % 3 === 0) {
+//       arr.push('fizz')
+//     } else {
+//       arr.push(i)
+//     }
+//   }
+
+//   return arr;
+// }
+
+
+// console.log(getFizzBuzzArr(15));
+
+
+
+const getPares = function (arr) {
+  par = []
+  arr.map((num) => {
+    if (num % 2 === 0) {
+      par.push(num)
     }
-    if (resto3 == 0 && resto5 == 0) {
-      i = 'BuzzFizz'
-    }
-    else { (i) };
+  });
 
-  }
-  return respuesta;
-})
+  console.log(par)
+}
+getPares([1, 2, 3, 4, 6, 8, 7])
 
 
 
 
 
 
-const respuesta = arr.map(function (valor) {
+//   arr.map((num) => {
+//     if (num > biggest) {
+//       biggest = num;
+//       counter = 1;
+//     } else if (num == biggest) {
+//       counter = counter + 1;
+//     }
+//   });
 
-  for (let i = 0; i <= valor; i++) {
-    let resto3 = valor % 3;
-    let resto5 = valor % 5;
+//   console.log(counter);
+// }
 
-    if (resto3 == 0) {
-      i = 'Fizz';
-    } if (resto5 == 0) {
-      i = 'Buzz';
-    }
-    if (resto3 == 0 && resto5 == 0) {
-      i = 'BuzzFizz'
-    }
-    else { (i) };
+// biggest([3, 10, 23, 2, 3, 23, 9, 1, 23, 4, 49, 49]);
 
-  }
-  return respuesta;
-});
-
-
-console.log(multiple([5]));
 
 
 //----------------------------------------------
@@ -98,7 +214,6 @@ console.log(multiple([5]));
 // const arr = [1, 2, 3, 2, 3, 4, 1];
 
 // console.log(numeroRepetido(arr));
-
 
 
 

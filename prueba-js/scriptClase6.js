@@ -1,23 +1,23 @@
 //EJERCICIO 1 (BIEN CON DOS SOLUCIONES)
 
-// function duplicados(arr) {
-//   // creo un lugar donde guardar todos los duplicados y agrego elementos con push
-//   const dup = [];
-//   const seen = []; // lo que ya vimos 
+function duplicados(arr) {
+  // creo un lugar donde guardar todos los duplicados y agrego elementos con push
+  const dup = [];
+  const seen = []; // lo que ya vimos 
 
-//   for (let i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
 
-//     if (seen.indexOf(arr[i]) > -1 && dup.indexOf(arr[i]) == -1) {
-//       dup.push(arr[i]);
-//     } else if (seen.indexOf(arr[i]) == -1) {
-//       seen.push(arr[i]);
-//     }
-//   }
-//   console.log(seen)
-//   return seen;
-// }
+    if (seen.indexOf(arr[i]) > -1 && dup.indexOf(arr[i]) == -1) {
+      dup.push(arr[i]);
+    } else if (seen.indexOf(arr[i]) == -1) {
+      seen.push(arr[i]);
+    }
+  }
+  console.log(seen)
+  return seen;
+}
 
-// duplicados([1, 2, 3, 2, 3, 4, 1]);
+duplicados([1, 2, 3, 2, 3, 4, 1]);
 
 
 // PRIMER SOLUCION :
@@ -59,7 +59,7 @@
 
 
 
-// //EJERCICIO CON MAYOR PERFORMANCE
+//EJERCICIO CON MAYOR PERFORMANCE
 
 // function duplicados(arr) {
 //   const seen = [];
@@ -73,11 +73,11 @@
 //       blacklist.push(arr[i]);
 //     }
 //   }
-//   console.log(seen)
+
 //   return seen;
 // }
 
-// duplicados([1, 2, 3, 2, 3, 4, 1, 2]);
+// console.log(duplicados([1, 2, 3, 2, 3, 4, 1, 2]));
 
 
 
@@ -137,27 +137,23 @@
 // console.log(biggestDup(arr))
 
 
+// VERSION CON MAP :
 
+// function biggest(arr) {
 
+//   let biggest = 0;
+//   let counter = 1;
 
+//   arr.map((num) => {
+//     if (num > biggest) {
+//       biggest = num;
+//       counter = 1;
+//     } else if (num == biggest) {
+//       counter = counter + 1;
+//     }
+//   });
 
-//VERSION CON MAP :
+//   console.log(counter);
+// }
 
-function biggest(arr) {
-
-  let biggest = 0;
-  let counter = 1;
-
-  arr.map((num) => {
-    if (num > biggest) {
-      biggest = num;
-      counter = 1;
-    } else if (num == biggest) {
-      counter = counter + 1;
-    }
-  });
-
-  console.log(counter);
-}
-
-biggest([3, 10, 23, 2, 3, 23, 9, 1, 23, 4, 49, 49]);
+// biggest([3, 10, 23, 2, 3, 23, 9, 1, 23, 4, 49, 49]);
