@@ -137,17 +137,59 @@
 
 
 
-const getPares = function (arr) {
-  par = []
-  arr.map((num) => {
-    if (num % 2 === 0) {
-      par.push(num)
-    }
-  });
+// const getPares = function (arr) {
+//   par = []
+//   arr.map((num) => {
+//     if (num % 2 === 0) {
+//       par.push(num)
+//     }
+//   });
 
-  console.log(par)
+//   console.log(par)
+// }
+// getPares([1, 2, 3, 4, 6, 8, 7])
+
+// const txt = 'juani';
+// const newArr = txt.split('').reverse('').join('');
+// console.log(newArr)
+
+
+
+class Counter {
+  constructor(startValue) {
+    this.value = startValue;
+  }
+
+  getValue() {
+    return `El value es ${this.value}`;
+  }
+
+  incrementValue() {
+    this.value++;
+  }
+
+  decrementValue() {
+    this.value--;
+  }
+
+  resetValue() {
+    this.value = 0;
+  }
 }
-getPares([1, 2, 3, 4, 6, 8, 7])
+
+const newCounter = new Counter(0);
+console.log(newCounter.getValue());
+
+newCounter.incrementValue();
+console.log(newCounter.getValue());
+
+newCounter.decrementValue();
+console.log(newCounter.getValue());
+
+newCounter.resetValue();
+console.log(newCounter.getValue());
+
+console.log(newCounter.value);
 
 
 
