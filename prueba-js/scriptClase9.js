@@ -57,3 +57,12 @@ function removeItem() {
   list[0].parentNode.removeChild(list[0])
 }
 
+function removeList() {
+  console.log('click')
+  const list = document.getElementById("list")
+
+  while (list.firstChild) {
+    list.removeChild(list.firstChild);
+  }
+}
+

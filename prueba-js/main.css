@@ -1,0 +1,44 @@
+/* .parrafo {
+  color: #ffffff;
+}
+
+button {
+  margin: 40px;
+  padding: 20px;
+}
+
+.modal {
+  display: none;
+}
+
+.aca {
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  margin-left: -250px;
+  left: 50%;
+  height: 75%;
+  background: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+}
+
+.hidden {
+  display: none;
+} */
+
+.product-container {
+  position: relative;
+}
+
+.overlay-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
