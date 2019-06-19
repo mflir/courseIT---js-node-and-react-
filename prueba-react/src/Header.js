@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 //import Search from './Search'
 import './Header.css'
+import Button from './Button'
 
 class Header extends Component {
   // handleClick() {
@@ -35,7 +36,7 @@ class Header extends Component {
     }
   }
 
- 
+
 
   handleClick() {
     // console.log(123)
@@ -47,11 +48,13 @@ class Header extends Component {
   }
 
   render() {
-    // const name = "courseIT"
-    let pClass = ''
-    if (this.state.active) {
-      pClass = 'blue'
-    }
+    // // const name = "courseIT"
+    // let pClass = ''
+    // if (this.state.active) {
+    //   pClass = 'blue'
+    // }
+
+    const name = 'Juani'
     return (
       <div>
         {/* <div className="red">Hola {name}</div>
@@ -63,9 +66,22 @@ class Header extends Component {
 
         <p>{this.state.value}</p> */}
 
-
+        {/* 
         <p className={pClass}>Hola courseIT</p>
         <button onClick={() => this.handleClick()}>cambiar</button>
+
+
+        <p>{this.props.propDePrueba}</p> */}
+
+        {name === 'Juani' ? (
+          <fragmanent>
+            <Button text="un bottones" />
+            <Button text="dos botones" />
+          </fragmanent>
+
+        ) : (
+            <Button text="enviar" />
+          )}
       </div>
     )
   }
