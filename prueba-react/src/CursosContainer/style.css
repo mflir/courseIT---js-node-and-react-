@@ -1,0 +1,12 @@
+.container-div-cursos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+p {
+  margin: 25px 35px 34px;
+  font-size: 18px;
+  color: #6e7380;
+  font-weight: normal;
+}
