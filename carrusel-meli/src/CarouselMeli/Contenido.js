@@ -2,7 +2,7 @@ import React from "react";
 import styled from 'styled-components'
 import Card from './card'
 
-import Lupa from './static/buscar.png'
+import Lupa from '../static/buscar.png'
 
 
 const ContainerBusqueda = styled.div`

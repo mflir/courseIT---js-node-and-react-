@@ -1,9 +1,9 @@
 import React from "react";
-import "./App.css";
+// import "./App.css";
 import styled from 'styled-components'
 
-import Price from "./price.js";
-import TruckIcon from "./truckicon.js";
+import Price from "../price.js";
+import TruckIcon from "../truckicon.js";
 
 const CardContainer = styled.div`
   margin: 0 8px 16px;

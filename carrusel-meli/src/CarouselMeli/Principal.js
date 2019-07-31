@@ -1,6 +1,5 @@
 import React from "react";
-import "./App.css";
-import logo from "./static/mllogo.png"
+import logo from "../static/mllogo.png"
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
